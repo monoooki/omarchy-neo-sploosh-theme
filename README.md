@@ -12,6 +12,6 @@ a short-range shooter known for its close-quarters burst and bold color accents.
 
 ## Install
 
-1. Copy the `neo-sploosh` folder into your `Omarchy/themes/` directory.
-2. Set `active = "neo-sploosh"` in your config.
-3. Reload Omarchy to apply the theme.
+```sh
+omarchy-theme-install https://github.com/monoooki/omarchy-neo-sploosh-theme
+```
