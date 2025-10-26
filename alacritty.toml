@@ -1,0 +1,36 @@
+# name: Bold Marker Neo Dark
+# author: MAV
+# description: Dark Splatoon Bold Marker Neo palette with steel neutrals and cyan accent
+# version: 0.1
+
+[colors.primary]
+background = '#191515'
+foreground = '#F9F9F8'
+
+[colors.cursor]
+text = '#191515'
+cursor = '#008DC9'
+
+[colors.selection]
+background = '#33312E'
+text = '#F9F9F8'
+
+[colors.normal]
+black   = '#191515'
+red     = '#604E47'
+green   = '#76746A'
+yellow  = '#A29B91'
+blue    = '#008DC9'
+magenta = '#62A9C7'
+cyan    = '#0076A7'
+white   = '#D0CEC5'
+
+[colors.bright]
+black   = '#33312E'
+red     = '#4E4A47'
+green   = '#8D887C'
+yellow  = '#BAB5AB'
+blue    = '#62A9C7'
+magenta = '#ABCADA'
+cyan    = '#0076A7'
+white   = '#ECEAE2'
