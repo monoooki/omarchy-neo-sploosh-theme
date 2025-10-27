@@ -1,0 +1,285 @@
+/**
+ * Neo Sploosh GTK accents
+ * Splatoon Neo Sploosh-o-matic inspired palette for GTK apps.
+ */
+
+@define-color ns-base             #191515;
+@define-color ns-surface          #1f1b18;
+@define-color ns-elevated         #33312e;
+@define-color ns-highlight        #008dc9;
+@define-color ns-highlight-soft   rgba(98,169,199,0.18);
+@define-color ns-highlight-strong rgba(0,141,201,0.32);
+@define-color ns-text-strong      #f9f9f8;
+@define-color ns-text-soft        #d0cec5;
+@define-color ns-text-muted       #8d887c;
+@define-color ns-border           rgba(208,206,197,0.12);
+@define-color ns-border-strong    rgba(98,169,199,0.32);
+@define-color ns-success          #76746a;
+@define-color ns-warning          #a29b91;
+@define-color ns-danger           #604e47;
+
+@define-color accent_bg_color     @ns-highlight;
+@define-color accent_fg_color     @ns-base;
+@define-color accent_color        @ns-highlight;
+
+@define-color window_bg_color     @ns-base;
+@define-color window_fg_color     @ns-text-soft;
+
+@define-color view_bg_color       @ns-surface;
+@define-color view_fg_color       @ns-text-soft;
+@define-color sidebar_bg_color    @ns-surface;
+@define-color sidebar_fg_color    @ns-text-soft;
+@define-color sidebar_backdrop_color shade(@ns-surface, 0.9);
+@define-color sidebar_shade_color     shade(@ns-surface, 0.7);
+
+@define-color headerbar_bg_color  @ns-elevated;
+@define-color headerbar_fg_color  @ns-text-strong;
+@define-color headerbar_backdrop_color shade(@ns-elevated, 0.8);
+@define-color headerbar_shade_color    shade(@ns-elevated, 0.6);
+
+@define-color popover_bg_color    @ns-elevated;
+@define-color popover_fg_color    @ns-text-soft;
+
+@define-color card_bg_color       rgba(31,27,24,0.9);
+@define-color card_fg_color       @ns-text-soft;
+
+@define-color dialog_bg_color     @ns-base;
+@define-color dialog_fg_color     @ns-text-soft;
+@define-color borders             @ns-border;
+@define-color unfocused_borders   rgba(141,136,124,0.15);
+
+@define-color theme_fg_color           @ns-text-soft;
+@define-color theme_text_color         @ns-text-soft;
+@define-color theme_bg_color           @ns-base;
+@define-color theme_base_color         @ns-surface;
+@define-color theme_selected_bg_color  @ns-highlight;
+@define-color theme_selected_fg_color  @ns-base;
+@define-color theme_unfocused_fg_color @ns-text-muted;
+@define-color theme_unfocused_text_color @ns-text-muted;
+@define-color theme_unfocused_bg_color shade(@ns-base, 1.02);
+@define-color theme_unfocused_base_color shade(@ns-surface, 1.02);
+@define-color theme_unfocused_selected_bg_color rgba(0,141,201,0.25);
+@define-color theme_unfocused_selected_fg_color @ns-text-soft;
+
+@define-color insensitive_bg_color shade(@ns-surface, 0.95);
+@define-color insensitive_fg_color rgba(141,136,124,0.5);
+@define-color insensitive_base_color shade(@ns-surface, 0.95);
+@define-color unfocused_insensitive_color rgba(141,136,124,0.4);
+
+@define-color success_bg_color    rgba(118,116,106,0.32);
+@define-color success_fg_color    @ns-text-soft;
+@define-color warning_bg_color    rgba(162,155,145,0.28);
+@define-color warning_fg_color    @ns-base;
+@define-color error_bg_color      rgba(96,78,71,0.32);
+@define-color error_fg_color      @ns-text-soft;
+
+@define-color warning_color       @ns-warning;
+@define-color error_color         @ns-danger;
+@define-color success_color       @ns-success;
+@define-color destructive_color   @ns-danger;
+
+@define-color link_color          @ns-highlight;
+@define-color shadow_color        rgba(0,0,0,0.45);
+
+window,
+dialog,
+popover,
+.background {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+headerbar,
+.titlebar {
+    border-bottom: 1px solid @ns-border;
+    box-shadow: 0 1px 4px @shadow_color;
+}
+
+headerbar entry,
+headerbar button,
+headerbar spinbutton,
+headerbar combobox button,
+.titlebar button {
+    background-color: rgba(78,74,71,0.35);
+    color: @ns-text-soft;
+    border-color: transparent;
+}
+
+headerbar button:hover,
+.titlebar button:hover {
+    background-color: @ns-highlight-strong;
+    color: @ns-base;
+}
+
+.view,
+.text-view,
+textview,
+treeview,
+list {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+}
+
+.sidebar,
+.sidebar list,
+navigation-sidebar {
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
+}
+
+.card,
+gridview child {
+    background-color: @card_bg_color;
+    color: @card_fg_color;
+    border: 1px solid @ns-border;
+    border-radius: 8px;
+}
+
+button {
+    background-color: rgba(78,74,71,0.35);
+    color: @theme_fg_color;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    background-color: @ns-highlight-strong;
+    color: @accent_fg_color;
+}
+
+button:checked,
+button:active {
+    background-color: @accent_bg_color;
+    color: @accent_fg_color;
+}
+
+button.suggested-action {
+    background-color: @accent_bg_color;
+    color: @accent_fg_color;
+}
+
+button.destructive-action {
+    background-color: @error_bg_color;
+    color: @error_fg_color;
+}
+
+entry,
+spinbutton,
+combobox,
+menubutton {
+    background-color: rgba(31,27,24,0.85);
+    color: @ns-text-soft;
+    border-radius: 6px;
+    border: 1px solid @ns-border;
+}
+
+entry:focus,
+spinbutton:focus,
+combobox:focus,
+menubutton:focus {
+    border-color: @ns-border-strong;
+    box-shadow: 0 0 0 2px rgba(0,141,201,0.25);
+}
+
+selection,
+view:selected,
+list row:selected,
+treeview:selected,
+.calendar:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+scrolledwindow undershoot.top,
+scrolledwindow undershoot.bottom,
+scrolledwindow undershoot.left,
+scrolledwindow undershoot.right {
+    box-shadow: inset 0 18px 24px -24px @shadow_color;
+}
+
+popover,
+.floating-bar {
+    border: 1px solid @ns-border;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+tooltip {
+    background-color: @ns-elevated;
+    color: @ns-text-soft;
+    border: 1px solid @ns-border;
+}
+
+.level-bar trough,
+progressbar trough,
+scale trough {
+    background-color: rgba(78,74,71,0.25);
+}
+
+.level-bar highlight,
+progressbar progress,
+scale highlight {
+    background-color: @accent_bg_color;
+}
+
+row:hover,
+list row:hover,
+popover modelbutton:hover {
+    background-color: rgba(78,74,71,0.4);
+}
+
+switch slider {
+    background-color: @ns-base;
+}
+
+switch:checked slider {
+    background-color: @accent_fg_color;
+}
+
+switch,
+switch:checked {
+    background-color: rgba(78,74,71,0.45);
+    color: transparent;
+    border: 1px solid transparent;
+}
+
+scale value {
+    color: @ns-text-strong;
+}
+
+scale slider {
+    background-color: @accent_bg_color;
+    box-shadow: 0 0 0 2px rgba(0,141,201,0.35);
+}
+
+scrollbar slider {
+    background-color: rgba(98,169,199,0.5);
+    border-radius: 999px;
+}
+
+scrollbar slider:hover {
+    background-color: rgba(0,141,201,0.6);
+}
+
+checkbutton check,
+radiobutton radio {
+    border-radius: 4px;
+    border: 1px solid @ns-border;
+    background-color: rgba(78,74,71,0.35);
+}
+
+checkbutton:checked check,
+radiobutton:checked radio {
+    background-color: @accent_bg_color;
+    border-color: transparent;
+}
+
+badge,
+.counter {
+    background-color: @ns-highlight;
+    color: @ns-base;
+}
+
+link,
+.link {
+    color: @link_color;
+}

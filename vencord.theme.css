@@ -1,0 +1,79 @@
+/**
+ * @name Neo Sploosh
+ * @description Splatoon Neo Sploosh-o-matic inspired palette for Vencord.
+ * @author mono
+ */
+
+:root,
+.theme-dark {
+    /* Base surfaces */
+    --background-primary: #191515;
+    --background-secondary: #1f1b18;
+    --background-secondary-alt: #33312e;
+    --background-floating: #1f1b18;
+    --background-tertiary: #1f1b18;
+    --background-accent: rgba(0, 141, 201, 0.45);
+    --background-modifier-hover: rgba(78, 74, 71, 0.32);
+    --background-modifier-active: rgba(78, 74, 71, 0.48);
+    --background-modifier-selected: rgba(98, 169, 199, 0.24);
+    --background-mentioned: rgba(98, 169, 199, 0.18);
+    --background-mentioned-hover: rgba(98, 169, 199, 0.28);
+    --channeltextarea-background: #191515;
+
+    /* Text */
+    --header-primary: #f9f9f8;
+    --header-secondary: #d0cec5;
+    --text-normal: #d0cec5;
+    --text-muted: #8d887c;
+    --text-link: #008dc9;
+
+    /* Accents & interactive */
+    --brand-500: #008dc9;
+    --brand-560: #0076a7;
+    --brand-600: #006386;
+    --brand-700: #004765;
+    --interactive-normal: #d0cec5;
+    --interactive-hover: #f9f9f8;
+    --interactive-active: #008dc9;
+    --interactive-muted: #4e4a47;
+
+    /* Status tones */
+    --status-danger: #604e47;
+    --status-warning: #a29b91;
+    --status-positive: #76746a;
+    --status-neutral: #62a9c7;
+    --status-online: #62a9c7;
+    --status-away: #a29b91;
+    --status-dnd: #604e47;
+    --status-invisible: #4e4a47;
+
+    /* Focus / borders / shadows */
+    --control-brand-foreground: #008dc9;
+    --modal-background: #191515;
+    --modal-footer-background: #191515;
+    --elevation-stroke: rgba(78, 74, 71, 0.7);
+    --elevation-low: rgba(25, 21, 21, 0.75);
+    --elevation-medium: rgba(25, 21, 21, 0.9);
+    --elevation-high: rgba(0, 0, 0, 0.6);
+}
+
+.theme-light {
+    --background-primary: #f9f9f8;
+    --background-secondary: #eceae2;
+    --background-secondary-alt: #d0cec5;
+    --background-floating: #f9f9f8;
+    --background-tertiary: #eceae2;
+    --background-modifier-hover: rgba(162, 155, 145, 0.38);
+    --background-modifier-active: rgba(162, 155, 145, 0.5);
+    --background-modifier-selected: rgba(0, 141, 201, 0.15);
+
+    --header-primary: #191515;
+    --header-secondary: #33312e;
+    --text-normal: #191515;
+    --text-muted: #4e4a47;
+
+    --interactive-normal: #33312e;
+    --interactive-hover: #191515;
+    --interactive-active: #008dc9;
+    --interactive-muted: #bab5ab;
+}
